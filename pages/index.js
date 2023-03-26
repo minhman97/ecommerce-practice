@@ -4,8 +4,6 @@ import { client } from "@/lib/client";
 import { HeroBanner, FooterBanner, Product } from "../components";
 const Home = ({products, banner}) => {
 
-  console.log(products);
-  console.log(banner);
   return (
     <>
       <HeroBanner heroBanner={banner.length && banner[0]}/>
@@ -20,7 +18,7 @@ const Home = ({products, banner}) => {
           })
         }
       </div>
-      <FooterBanner />
+      <FooterBanner footerBanner={banner.length && banner[0]}/>
     </>
   );
 };
