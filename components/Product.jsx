@@ -6,7 +6,7 @@ import Link from "next/link";
 const Product = ({ product }) => {
   return (
     <div>
-      <Link href={`product/${product.slug.current}`}>
+      <Link href={`/product/${product.slug.current}`}>
         <div className="product-card">
           <img
             src={urlFor(product.image && product.image[0])}
